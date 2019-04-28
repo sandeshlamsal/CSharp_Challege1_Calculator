@@ -35,6 +35,8 @@ namespace CSharp_Challege1_Calculator
             while (opt == "yes");
             
             Console.WriteLine("Thank you for using Calcaultor");
+            Environment.Exit(-1);
+
         }
 
 
@@ -46,10 +48,9 @@ namespace CSharp_Challege1_Calculator
             {
                 case "1":
                     //get input of 2 msg
-                    Console.WriteLine("Please enter 1st No to calculate:");
+                    Console.WriteLine("Please enter 1st No to Add:");
                     a=Convert.ToInt32(Console.ReadLine());
-                 
-                    Console.WriteLine("Please enter 2nd value to calculate:");
+                    Console.WriteLine("Please enter 2nd value to Add:");
                     b=Convert.ToInt32(Console.ReadLine());
 
                     result = a+b;
@@ -58,20 +59,41 @@ namespace CSharp_Challege1_Calculator
                     break;
 
                 case "2":
-                    //get input of 2 msg                
-                    //calculate
+                    //get input of 2 msg
+                    Console.WriteLine("Please enter 1st No to Subtract:");
+                    a = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter 2nd value to Subtract:");
+                    b = Convert.ToInt32(Console.ReadLine());
+
+                    result = a - b;
+                    Console.WriteLine("Subtraction of no " + a + " and " + b + " is:" + result);
 
                     break;
 
                 case "3":
                     //get input of 2 msg                
-                    //calculate
+                    //get input of 2 msg
+                    Console.WriteLine("Please enter 1st No to Multiply:");
+                    a = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter 2nd value to Multiply:");
+                    b = Convert.ToInt32(Console.ReadLine());
+
+                    result = a * b;
+                    Console.WriteLine("Multiplication of no " + a + " and " + b + " is:" + result);
 
                     break;
 
                 case "4":
                     //get input of 2 msg                
                     //calculate
+                    Console.WriteLine("Please enter 1st No to Divide:");
+                    a = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter 2nd value to Divide:");
+                    b = Convert.ToInt32(Console.ReadLine());
+
+                    result = a / b;
+                    Console.WriteLine("Divison of no " + a + " and " + b + " is:" + result);
+
                     break;
 
                 case "5":
